@@ -1,0 +1,7 @@
+{
+  "name": "blank-no-ts",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

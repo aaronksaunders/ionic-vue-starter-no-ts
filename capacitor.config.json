@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "blank-no-ts",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
