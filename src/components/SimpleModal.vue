@@ -8,9 +8,15 @@
     <div style="padding : 16px">
       {{ content }}
     </div>
-    <ion-button expand="block" @click="save">OK</ion-button
-    ><ion-button expand="block" color="danger" @click="cancel"
-      >CANCEL</ion-button
+    <!-- ok -->
+    <ion-button expand="block" @click="save">
+      <ion-icon :icon="checkmarkDoneCircleOutline" slot="start"></ion-icon
+      >OK</ion-button
+    >
+    <!-- cancel -->
+    <ion-button expand="block" color="danger" @click="cancel">
+      <ion-icon :icon="closeCircleOutline" slot="start"></ion-icon>
+      CANCEL</ion-button
     >
   </ion-content>
 </template>
@@ -23,6 +29,7 @@ import {
   IonToolbar,
   IonButton
 } from "@ionic/vue";
+import { checkmarkDoneCircleOutline, closeCircleOutline } from "ionicons/icons";
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -40,6 +47,8 @@ export default defineComponent({
   },
   data() {
     return {
+      checkmarkDoneCircleOutline,
+      closeCircleOutline,
       content: "Content"
     };
   },
